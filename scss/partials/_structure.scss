@@ -46,6 +46,10 @@
     padding: 1em;
     justify-content: center;
 
+    ul {
+        display: inline-block;
+    }
+
     a {
         color: white;
         text-decoration: none;
