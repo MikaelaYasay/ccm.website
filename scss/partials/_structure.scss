@@ -41,7 +41,7 @@
 
 /* SITE FOOTER */ 
 .site-footer {
-    background-color: black;
+    background-color: #743B1B; 
     display: flex;
     padding: 1em;
     justify-content: center;
@@ -62,9 +62,11 @@ section {
 /* HERO SECTION */
 .hero {
     color: white;
+    text-align: center;
     padding: 6em 0;
     min-height: 100vh;
     display: grid;
+    place-items: center;
 
     h1 {
         color: white;
