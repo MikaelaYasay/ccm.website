@@ -84,3 +84,17 @@ section {
         max-width: 1500px;
     }
 }
+
+/* CONTENT */ 
+.small-text {
+    display: flex;
+    text-align: center;
+}
+
+/* OUR MISSION */ 
+.our-mission {
+    h3 {
+        display: inline-block;
+        text-align: center;
+    }
+}

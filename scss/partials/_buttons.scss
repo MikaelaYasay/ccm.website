@@ -1,7 +1,7 @@
 /* BUTTONS */
 .button {
     display: inline-block;
-    background-color:#C1A676;
+    background-color: white;
     color: #743B1B;
     text-decoration: none;
     padding: 1em;
@@ -10,7 +10,25 @@
 
     &:hover {
         color: #fff;
-        background-color: $color-link-darker;
+        background-color: #C1A676;
     }
 }
 
+.site-nav {
+    ul {
+        .button {
+            display: inline-block;
+            background-color: white;
+            color: #743B1B;
+            text-decoration: none;
+            padding: 1em;
+            border-radius: 5px;
+            margin: 1em .5em 1em 0;
+        
+            &:hover {
+                color: #fff;
+                background-color: #C1A676;
+            }
+        }
+    }
+}
