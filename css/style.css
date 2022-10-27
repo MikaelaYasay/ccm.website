@@ -27,11 +27,11 @@ TABLE OF CONTENTS
 */
 /* BASE TEXT COLORS */
 body {
-  color: rgba(0, 0, 0, 0.8);
+  color: #EBEBEB;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: rgb(0, 0, 0);
+  color: #EBEBEB;
 }
 
 /* BASE TEXT FONTS */
@@ -43,6 +43,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Arvo", Georgia, "Times New Roman", Times, serif;
   font-weight: 700;
   font-style: normal;
+  text-transform: uppercase;
 }
 
 /* BASE TYPOGRAPHY */
@@ -78,10 +79,10 @@ p {
 
 /* LINKS */
 a {
-  color: rgb(28, 133, 7);
+  color: #743B1B;
 }
 a:hover {
-  color: rgb(19, 92, 4);
+  color: #5b2e14;
 }
 
 /* HORIZONTAL LINE */
@@ -90,23 +91,6 @@ hr {
   height: 1px;
   background-color: rgba(0, 0, 0, 0.1);
   margin: 3em 0;
-}
-
-/* TYPE SPECIMEN */
-.headline {
-  font-size: 4em;
-  font-weight: 700;
-  line-height: 1;
-  margin: 0;
-  color: rgb(255, 187, 0);
-}
-
-.subheadline {
-  font-weight: 400;
-  font-size: 2.5em;
-  line-height: 1.1;
-  color: rgba(0, 0, 0, 0.5);
-  margin: 0.25em 0;
 }
 
 /* SECTION HEADING */
@@ -128,8 +112,8 @@ hr {
 /* BUTTONS */
 .button {
   display: inline-block;
-  background-color: rgb(28, 133, 7);
-  color: #fff;
+  background-color: #C1A676;
+  color: #743B1B;
   text-decoration: none;
   padding: 1em;
   border-radius: 5px;
@@ -137,7 +121,7 @@ hr {
 }
 .button:hover {
   color: #fff;
-  background-color: rgb(19, 92, 4);
+  background-color: #C1A676;
 }
 
 /* RESPONSIVE IMAGES */
@@ -285,6 +269,7 @@ body {
 .site-header h1 {
   font-size: 1.5em;
   margin: 0;
+  text-transform: uppercase;
 }
 .site-header .site-id {
   display: -webkit-box;
@@ -299,9 +284,22 @@ body {
   margin-right: 0.5em;
 }
 
+.section-title {
+  margin-top: 1em;
+}
+.section-title p {
+  margin: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /* SITE FOOTER */
 .site-footer {
-  background-color: black;
+  background-color: #743B1B;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -309,6 +307,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.site-footer ul {
+  display: inline-block;
 }
 .site-footer a {
   color: white;
@@ -327,12 +328,14 @@ section {
 
 /* HERO SECTION */
 .hero {
-  background-color: black;
+  background-color: #743B1B;
   color: white;
+  text-align: center;
   padding: 6em 0;
   min-height: 100vh;
   display: -ms-grid;
   display: grid;
+  place-items: center;
 }
 .hero h1 {
   color: white;
@@ -344,7 +347,30 @@ section {
   max-width: 1500px;
 }
 
+/* CONTENT */
+.small-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+/* OUR MISSION */
+.container .our-mission {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+.container .our-mission p, .container .our-mission h3 {
+  display: inline-block;
+  text-align: center;
+}
+
 /* SITE-HEADER SITE-NAV */
+.site-header .site-nav {
+  /* BIG SCREENS */
+}
 .site-header .site-nav .menu-button {
   position: absolute;
   top: 0.75em;
@@ -367,7 +393,7 @@ section {
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: rgb(255, 0, 0);
+  background-color: #914E26;
   position: fixed;
   top: 0;
   right: 0;
@@ -390,7 +416,7 @@ section {
           transform: translate(100%, 0);
   -webkit-transition: 0.3s all ease-out;
   transition: 0.3s all ease-out;
-  z-index: 1;
+  z-index: 10;
 }
 .site-header .site-nav li {
   font-size: 4vw;
@@ -400,6 +426,9 @@ section {
   -webkit-transition: 0.3s all ease-out 0.3s;
   transition: 0.3s all ease-out 0.3s;
   opacity: 0;
+}
+.site-header .site-nav a {
+  padding: 1em;
 }
 .site-header .site-nav[data-navstate=open] .menu-button {
   position: fixed;
@@ -427,6 +456,35 @@ section {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
   opacity: 1;
+}
+@media (min-width: 768px) {
+  .site-header .site-nav .menu-button {
+    background-color: red;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .site-header .site-nav ul {
+    background-color: transparent;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    position: static;
+    width: auto;
+    height: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-transition: none;
+    transition: none;
+  }
+  .site-header .site-nav li {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    font-size: 1em;
+    min-width: 0;
+  }
 }
 
 /* FOOTER SITE-NAV */

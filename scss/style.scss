@@ -6,8 +6,8 @@ $color-text-body: #EBEBEB;
 $color-text-headings: #EBEBEB; 
 $color-yellow: #C1A676;
 
-
-$color-lightgrey: #743B1B;
+$color-link: #743B1B;
+$color-link-darker: #5b2e14;
 
 $font-family-sans: 'Lato', Helvetica, Arial, sans-serif;
 $font-family-serif: 'Arvo', Georgia, 'Times New Roman', Times, serif;
@@ -18,15 +18,15 @@ $breakpoint-medium: 1050px;
 $breakpoint-large: 1250px;
 
 // IMPORTS
-@import "partials/toc";
-@import "partials/typography"; 
-@import "partials/helpers";
-@import "partials/buttons";
-@import "partials/media";  
-@import "partials/layout";   
-@import "partials/grid"; 
-@import "partials/structure"; 
-@import "partials/sitenav";   
-@import "partials/animations";  
+@import "partials/toc"; 
+@import "partials/typography";  
+@import "partials/helpers"; 
+@import "partials/buttons"; 
+@import "partials/media";   
+@import "partials/layout";    
+@import "partials/grid";  
+@import "partials/structure";
+@import "partials/sitenav";
+@import "partials/animations"; 
 
 

@@ -92,9 +92,14 @@ section {
 }
 
 /* OUR MISSION */ 
-.our-mission {
-    h3 {
-        display: inline-block;
+.container { 
+    .our-mission {
+        display: flex;
         text-align: center;
+
+        p, h3 {
+            display: inline-block;
+            text-align: center;
+        }
     }
 }
