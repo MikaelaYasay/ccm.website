@@ -10,6 +10,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: transparent;
     
     a {
         color: white;
@@ -69,10 +70,9 @@ section {
 
 /* HERO SECTION */
 .hero {
-    background-color: #743B1B; 
     color: white;
     text-align: center;
-    padding: 6em 0;
+    padding: 0;
     min-height: 100vh;
     display: grid;
     place-items: center;
@@ -86,6 +86,10 @@ section {
     p {
         font-size: 1.1em;
         max-width: 1500px;
+    }
+
+    img {
+        width: 100%;
     }
 }
 

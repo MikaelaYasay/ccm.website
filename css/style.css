@@ -265,6 +265,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: transparent;
 }
 .site-header a {
   color: white;
@@ -332,10 +333,9 @@ section {
 
 /* HERO SECTION */
 .hero {
-  background-color: #743B1B;
   color: white;
   text-align: center;
-  padding: 6em 0;
+  padding: 0;
   min-height: 100vh;
   display: -ms-grid;
   display: grid;
@@ -349,6 +349,9 @@ section {
 .hero p {
   font-size: 1.1em;
   max-width: 1500px;
+}
+.hero img {
+  width: 100%;
 }
 
 /* CONTENT */
