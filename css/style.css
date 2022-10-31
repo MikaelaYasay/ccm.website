@@ -247,6 +247,10 @@ body {
   padding: 1%;
 }
 
+body {
+  background-color: #743B1B;
+}
+
 /* SITE STRUCUTURE */
 .site-header {
   position: absolute;
@@ -349,21 +353,25 @@ section {
 
 /* CONTENT */
 .small-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  color: #C1A676;
   text-align: center;
 }
 
 /* OUR MISSION */
-.container .our-mission {
+.container .tagline {
+  text-align: center;
+}
+.container .tagline h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.container .our-mission p, .container .our-mission h3 {
-  display: inline-block;
+.container .tagline .small-text {
+  display: -ms-grid;
+  display: grid;
   text-align: center;
 }
 
@@ -482,8 +490,12 @@ section {
     opacity: 1;
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
-    font-size: 1em;
+    font-size: 0.8em;
     min-width: 0;
+    margin: 0 1em 0 1em;
+  }
+  .site-header .site-nav .button {
+    margin: 1em 0 1em 22em;
   }
 }
 

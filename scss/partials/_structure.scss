@@ -1,3 +1,7 @@
+body {
+    background-color: #743B1B;
+}
+
 /* SITE STRUCUTURE */ 
 .site-header {
     position: absolute;
@@ -87,18 +91,22 @@ section {
 
 /* CONTENT */ 
 .small-text {
-    display: flex;
+    color: $color-yellow;
     text-align: center;
 }
 
 /* OUR MISSION */ 
 .container { 
-    .our-mission {
-        display: flex;
+    .tagline {
         text-align: center;
 
-        p, h3 {
-            display: inline-block;
+        h3 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .small-text {
+            display: grid;
             text-align: center;
         }
     }
