@@ -19,6 +19,7 @@
         }
     }
 
+
     ul {
         margin: 0;
         padding: 0;
@@ -99,6 +100,7 @@
         }
 
         li {
+            max-width: 40vw;
             opacity: 1;
             transform: translate(0,0);
             font-size: .8em;
