@@ -80,6 +80,11 @@
         }
     }
 
+    .selected {
+        border-bottom: 2px solid $color-yellow;
+        color: $color-yellow;
+    }
+
     /* BIG SCREENS */ 
     @media (min-width: 768px) {
         .menu-button {

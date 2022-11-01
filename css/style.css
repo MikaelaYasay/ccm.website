@@ -492,6 +492,10 @@ section {
           transform: translate(0, 0);
   opacity: 1;
 }
+.site-header .site-nav .selected {
+  border-bottom: 2px solid #C1A676;
+  color: #C1A676;
+}
 @media (min-width: 768px) {
   .site-header .site-nav .menu-button {
     background-color: red;
