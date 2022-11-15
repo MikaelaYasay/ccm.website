@@ -42,8 +42,8 @@
     </header>
 
     <main class="site-main">
-        <div>
-            <img src="img/Picket_Hero.jpg" alt="Image of a dog on wood">
+        <div class="hero-img">
+            <img src="img/Picket_Hero.jpg" alt="Image of a dog on wood" width="1800px" height="2050px">
             <h1 class="hide-visually">High-quality, Hand-split cedar products</h1>
         </div>
 
@@ -96,20 +96,34 @@
                     <h3>What we produce</h3>
                     <p>Check out our cedar products, and the sizes we have to offer</p>
                 </div>
-                <div class="one-fourth">
-                    <img src="img/picket.jpg" alt="Placeholder">
-                </div>
-                <div class="one-fourth">
-                    <img src="img/postnrails.jpg" alt="Placeholder">
-                </div>
-                <div class="one-fourth">
-                    <img src="img/mulch.jpg" alt="Placeholder">
-                </div>
-                <div class="one-fourth">
-                    <img src="img/fenceboards.jpg" alt="Placeholder">
+            <div class="one-half">
+                <div class="parent-card-carousel" id="parentcardcarousel">
+                    <div class="card-carousel" id="card-carousel">
+                        <div class="cards">
+                            <img src="img/picket.jpg" width="400px" height="200px">
+                        </div>
+                        <div class="cards">
+                            <img src="img/postnrails.jpg" width="400px" height="1000px">
+                        </div>
+                        <div class="cards">
+                            <img src="img/mulch.jpg" width="400px" height="200px">
+                        </div>
+                        <div class="cards">
+                            <img src="img/fenceboards.jpg" width="400px" height="200px">
+                        </div>
+                    </div>
+                    <button id="prev" class="carouselbtn">❮</button>
+                    <button id="next" class="carouselbtn">❯</button>
+                    <div class="points-carousel">
+                        <button class="btn-carousel"></button>
+                        <button class="btn-carousel"></button>
+                        <button class="btn-carousel"></button>
+                        <button class="btn-carousel"></button>
+                    </div>
                 </div>
             </div>
-            <div>
+
+            <div class="read-more">
                 <div class="button"><a href="products.html">Read More</a></div>
             </div>
         </div>
@@ -120,15 +134,36 @@
                 <h3>CCM Information</h3>
             </div>
             <div class="row">
-                <div class="one-third">
-                    <img src="https://via.placeholder.com/371x507" alt="Placeholder"><div class="button"><a href="products.html">Get in Touch</a></div>
-                </div>
-                <div class="one-third">
-                    <img src="https://via.placeholder.com/371x507" alt="Placeholder"><div class="button"><a href="products.html">Get Directions</a></div>
-                </div>
-                <div class="one-third">
-                    <img src="https://via.placeholder.com/371x507" alt="Placeholder"><div class="button"><a href="products.html">Get a Quote</a></div>
-                </div>
+                <ul class="cards">
+                  <li class="cards_item">
+                    <div class="card">
+                      <div class="card_content">
+                        <h2 class="card_title">Card Grid Layout</h2>
+                        <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                        <button class="btn card_btn">Get in Touch</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="cards_item">
+                    <div class="card">
+                      <div class="card_content">
+                        <h2 class="card_title">Card Grid Layout</h2>
+                        <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                        <button class="btn card_btn">Get Directions</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="cards_item">
+                    <div class="card">
+                      <div class="card_content">
+                        <h2 class="card_title">Card Grid Layout</h2>
+                        <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                        <button class="btn card_btn">Get a Quote</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
         </div>
 
