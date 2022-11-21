@@ -5,3 +5,38 @@
     left: -9999px;
 
 }
+
+/* CONTACT FORM */ 
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+    background-color: $color-yellow;
+    color: $color-red;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: $color-yellow;  
+    box-shadow: 0 4px 8px 0 rgb(37, 37, 37);
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 20px;
+  }

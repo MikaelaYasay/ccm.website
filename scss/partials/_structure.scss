@@ -55,6 +55,25 @@ body {
     }
 }
 
+.stats {
+    display: inline-block;
+    text-align: center;
+
+    h2, p {
+        margin-top: 1em;
+    }
+}
+
+.produce_sec {
+    background-color: $color-yellow;
+    border-radius: 2em;
+    padding: 5em 1em 5em 1em;
+
+    h3 {
+        font-size: 1.3em;
+    }
+}
+
 /* SITE FOOTER */ 
 .site-footer {
     background-color: #743B1B; 
