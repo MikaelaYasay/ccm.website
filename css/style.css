@@ -399,6 +399,16 @@ img {
   padding: 0.2em;
 }
 
+/* PROFILES */
+.home-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.home-profile h3 {
+  padding-right: 1em;
+}
+
 /* RESET BODY */
 body {
   margin: 0;
@@ -523,6 +533,11 @@ body {
 
 body {
   background-color: #743B1B;
+}
+
+/* COLOR YELLOW TAGS */
+.color-yellow {
+  color: #C1A676;
 }
 
 /* SITE STRUCUTURE */
