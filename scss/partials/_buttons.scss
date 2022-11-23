@@ -32,9 +32,13 @@
     }
   
     input[type="email"]{
+        margin-right: 1.1em;
         padding: 4px;
-        height: 25px;
-        width: 250px;
+        height: 40px;
+        width: 330px;
+        border: 0;
+        border-radius: .5em;
+        justify-content: center;
     }
 }
 
@@ -42,9 +46,10 @@
     height: 38px;
     background: $color-yellow;
     border: 0;
+    border-radius: .5em;
     padding-left: 20px;
     padding-right: 20px;
-    color: #ffffff;
+    color: #743B1B;
   }
 
 .card {

@@ -96,6 +96,12 @@ body {
     }
 }
 
+.inline-nav {
+    ul {
+        display: block;
+    }
+}
+
 section {
     padding: 4em 0;
     min-height: 100vh;
@@ -151,6 +157,42 @@ section {
         }
     }
 }
+
+/* WHAT WE DO */ 
+.whatdo {
+    img {
+        position: absolute;
+        z-index: -99999;
+    }
+}
+
+/* WOOD PLANK */ 
+.woodplank {
+    img {
+        margin-top: 23em;
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+/* ABOUT */ 
+.hero-bg {
+    img {
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+.about-description {
+    p {
+        margin-top: .5em;
+    }
+
+    .second-desc {
+        margin-top: 2em;
+    }
+}
+
 
 /* ON AVERAGE */ 
 .average_illustration {

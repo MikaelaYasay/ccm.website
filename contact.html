@@ -17,7 +17,7 @@
     <header class="site-header">
         <div class="site-id">
             <div class="logo">
-                <a href="index.html"><img src="img/CCMLogo_01.png" alt="MY Square Logo"></a>
+                <a href="index.html"><img src="img/CCMLogo_01.png" alt="CCM logo" height="200" width="200"></a>
             </div>
             <h4><a href="index.html">Cedar Creek Manufacturing</a></h4>
         </div>
@@ -34,7 +34,7 @@
             <ul>
                 <li><a href="products.html">Cedar Products</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a class="selected" href="contact.html">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a href="quote.html">Build a Quote</a></li>
                 <li><a class="button" href="tel:208-435-4802">(208) 435-4802</a></li>
             </ul>
@@ -42,56 +42,54 @@
     </header>
 
     <main class="site-main">
-        <div>
-            <img class="full-screen-width" src="img/Picket_Hero.jpg" alt="">
+        <div class="hero-img">
+            <img src="img/Picket_Hero.jpg" alt="Image of a dog on wood" width="1800px" height="2050px">
+            <h1 class="hide-visually">High-quality, Hand-split cedar products</h1>
         </div>
-        
-        <div class="container">
-          <form action="/action_page.php">
-            <label for="fname">Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="First and Last name">
 
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email" placeholder="Email Address">
-
-            <label for="email">Phone Number</label>
-            <input type="text" id="email" name="email" placeholder="ex. (123-4567)">
         
-            <label for="products">Products</label>
-            <select id="country" name="country">
-              <option value="fencing">Picket Fencing</option>
-              <option value="rickety">Rickety Picket</option>
-              <option value="boards">Fence Boards</option>
-              <option value="mulch">Mulch</option>
-            </select>
-        
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-        
-            <input type="submit" value="Submit">
-          </form>
-        </div>
 
     </main>
 
     <footer class="site-footer">
-        <nav class="site-nav">
-            <div class="row">
-                <div class="one-fourth">
-                    <a href="index.html"><img src="img/CCMLogo_01.png" alt="MY Square Logo">Cedar Creek Manufacturing</a>
-                    <a>We set out to make high-quality cedar products at affordable prices that anyone can enjoy, and we have been doing so for over 20 years.</a>
-                </div>
-                <div class="one-fourth">
-                    <ul>
-                        <li><a href="#index.html">Home</a></li>
-                        <li><a href="#products.html">Cedar Products</a></li>
-                        <li><a href="#about.html">About Us</a></li>
-                        <li><a href="#contact.html">Contact</a></li>
-                        <li><a href="#quote.html">Build a Quote</a></li>
+        <div class="row">
+            <div class="one-third footer-logo">
+                <a href="index.html"><img src="img/CCMLogo_01.png" alt="MY Square Logo" width="150px"><h2>Cedar Creek Manufacturing</h2></a>
+                <h5><span class="color-yellow">Monday - Friday: 0700 - 1200</span></h5>
+                <a>We set out to make high-quality cedar products at affordable prices that anyone can enjoy, and we have been doing so for over 20 years.</a>
+            </div>
+            <div class="one-third footer-navigation">
+                <nav class="site-nav one-half">
+                    <ul class="inline-nav">
+                        <h5>Company</h5>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Cedar Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="quote.html">Build a Quote</a></li>
                     </ul>
+                </nav>
+                <nav class="footer-contact one-half">
+                    <ul class="inline-nav">
+                        <h5>Contact Us</h5>
+                        <li><a href="tel:208-435-4802">(208) 435-4802</a></li>
+                        <li>jaighdenlondon@gmail.com</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="newsletter one-third">
+                <div class="container">
+                <div>
+                    <h5>Newsletter</h5>
+                    <p>Sign up for our latest news, updates, and insights on Cedar Creek Manufacturing!</p>
+                </div>
+                    <form>
+                    <input type="email" placeholder="Enter Email...">
+                    <button type="submit" class="button_1">Subscribe</button>
+                    </form>
                 </div>
             </div>
-        </nav>
+        </div>
     </footer>
 
     <!-- SMOOTH SCROLL BY CHRIS FERDINANDI https://github.com//cferdinandi/smooth-scroll-->
