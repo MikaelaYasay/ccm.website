@@ -40,3 +40,66 @@ input[type=text], select, textarea {
     background-color: transparent;
     padding: 20px;
   }
+
+/* SWIPER */
+.swiper-container {
+  position:relative;
+  width: 371px;
+  height: 531.61px;
+}
+.swiper-container > .swiper-slide__content {
+position:absolute;
+top:0;
+}
+
+.swiper-slide {
+height: 531.61px;
+display:flex;
+background: #EBEBEB;
+align-items: center;
+justify-content:center;
+transition:all 200ms linear;
+transform: scale(0.8);
+
+  &.swiper-slide-active{
+    transform: scale(1);
+    background: #fc0
+  }
+
+  h4 {
+    color: #2D1A10;
+  }
+}
+.swiper-slide__content {
+height: 1em;
+}
+
+.swiper-button-prev {
+  cursor: pointer;
+  background-image: url('/img/swiper-button.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40px;
+  position: absolute;
+  top: 25%;
+  left: -10px;
+  width: 39.5px;
+  height: 44px;
+  margin-top: -22px;
+  z-index: 10;
+}
+
+.swiper-button-next {
+  cursor: pointer;
+  background-image: url('/img/swiper-button-next.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40px;
+  position: absolute;
+  top: 25%;
+  left: 4px;
+  width: 39.5em;
+  height: 44px;
+  margin-top: -22px;
+  z-index: 10;
+}

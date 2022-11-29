@@ -101,35 +101,32 @@
                     <h3>Cedar Products</h3>
                 </div>
                 <div class="row">
-                    <div class="one-half produce_sec">
-                        <h3>What we produce</h3>
-                        <p>Check out our cedar products, and the sizes we have to offer</p>
-                    </div>
-                <div class="one-half"> 
-                    <div class="parent-card-carousel" id="parentcardcarousel">
-                        <div class="card-carousel" id="card-carousel">
-                            <div class="cards">
-                                <img src="img/picket.jpg" width="400px" height="200px">
+                    <div class="one-half">
+                        <!-- Slider main container -->
+                        <div class="swiper-container">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <h4>Picket Fencing</h4>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h4>Post & Rails</h4>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h4>Mulch</h4>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h4>Fence Boards</h4>
+                                </div>
                             </div>
-                            <div class="cards">
-                                <img src="img/postnrails.jpg" width="400px" height="1000px">
-                            </div>
-                            <div class="cards">
-                                <img src="img/mulch.jpg" width="400px" height="200px">
-                            </div>
-                            <div class="cards">
-                                <img src="img/fenceboards.jpg" width="400px" height="200px">
-                            </div>
-                        </div>
-                        <button id="prev" class="carouselbtn">❮</button>
-                        <button id="next" class="carouselbtn">❯</button>
-                        <div class="points-carousel">
-                            <button class="btn-carousel"></button>
-                            <button class="btn-carousel"></button>
-                            <button class="btn-carousel"></button>
-                            <button class="btn-carousel"></button>
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
                     </div>
+                </div>
+                    
                 </div>
             </div>
             <div class="read-more">
@@ -258,7 +255,6 @@
                         <h3>Cedar Creek Manufacturing</h3>
                         <p>Mon-Fri: 7AM - 12PM</p>    
                         <p>Sat-Sun: Closed</p>
-                        <img src="https://via.placeholder.com/500x307" alt="Placeholder">
                     </div>
                     <div class="two-thirds">
                         <div class="container">
@@ -272,12 +268,11 @@
                             <label for="lname">Phone Number</label>
                             <input type="text" id="lname" name="lastname" placeholder="Your number">
                         
-                            <label for="service">Products</label>
+                            <label for="service">Services</label>
                             <select id="service" name="country">
-                                <option value="products">Picket Fencing</option>
-                                <option value="products">Rickety Picket Fencing</option>
-                                <option value="products">Fence Boards</option>
-                                <option value="products">Mulch</option>
+                                <option value="products">Custom Cuts</option>
+                                <option value="products">Fencing Products</option>
+                                <option value="products">General Concern</option>
                             </select>
                         
                             <label for="subject">Message</label>

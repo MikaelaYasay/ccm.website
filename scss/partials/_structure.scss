@@ -202,3 +202,31 @@ section {
         text-align: center;
     }
 }
+
+/* CEDAR PRODUCTS */ 
+.addition {
+    color: rgb(135, 135, 135);
+}
+
+
+.inline-desc {
+    display: inline-block;
+    max-width: 500px;
+}
+
+.add-space {
+    margin-top: 2em;
+}
+
+.margin-space {
+    margin: 1.4em;
+}
+
+/* PRODUCTS EMAIL */ 
+.email-link {
+    color: $color-yellow;
+}
+
+.product-desc {
+    max-width: 1000px;
+}
