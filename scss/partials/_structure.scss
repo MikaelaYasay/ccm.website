@@ -230,3 +230,120 @@ section {
 .product-desc {
     max-width: 1000px;
 }
+
+/* HOME TIMELINE */ 
+.home_timeline {
+    margin-bottom: 1em;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: calc(100vw + 200px) ;
+    top: calc(50% + 50px);
+    left: -50px;
+    transform: translateY(50%)
+    }
+}
+  
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 190px;
+
+    &::before {
+        content: '';
+        width: 1px;
+        background-color: $color-yellow;
+        position: absolute;
+        height: 50px;
+        bottom: 50px;
+        z-index: -1;
+    }
+}
+  
+.timeline-icon {
+    border-radius: 3em;
+    padding: 0;
+    font-size: 50px;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: box-shadow .2s ease-in-out;
+
+    &:hover {
+        box-shadow: 1px 1px  #ff000080;
+    }
+}
+  
+.timeline-title {
+    transform: rotate(-90deg);
+}
+  
+.timeline-text {
+    h4 {
+    color: white;
+    padding: 5px;
+    padding-top: 1em;
+    font-family: $font-family-serif;
+    font-weight: 400;
+    }
+}
+
+/* CONTACTS PAGE */ 
+.cont-information {
+    display: grid;
+    justify-content: center;
+    width: 600px;
+    padding: 1em;
+    background-color: #914E26;
+}
+
+.contact-content {
+    display: inline-block;
+    text-align: center;
+}
+
+.form {
+    position: absolute;
+}
+
+.email-contact {
+    color: #EBEBEB;
+    text-decoration: none;
+}
+
+.dark-color {
+    color: $color-dark;
+}
+
+.contact-spacing {
+    margin-top: 2em;
+}
+
+.centered-space {
+    display: inline-block;
+    align-items: center;
+}
+
+.cont-section {
+    display: flex;
+    align-items: center;
+    max-width: 700px;
+}
+
+.centered-align {
+    display: grid;
+    justify-content: center;
+}

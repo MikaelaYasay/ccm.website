@@ -119,6 +119,10 @@
 
 
 /* FOOTER SITE-NAV */ 
+.site-footer {
+    padding: 0 2em;
+}
+
 .site-footer .site-nav, 
 .footer-contact, .newsletter {
 
@@ -146,9 +150,16 @@
     }
 }
 
-.footer-navigation {
-    nav {
-        display: inline-block;
-        justify-content: center;
-    }
+.site-footer .row {
+    align-items: flex-start;
 }
+
+.footer-navigation {
+    display: flex;
+    justify-content: space-around;
+    // nav {
+    //     display: inline-block;
+    //     justify-content: center;
+    // }
+}
+

@@ -11,6 +11,9 @@
 
     <!-- MAIN CSS STYLES -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
 
@@ -35,7 +38,6 @@
                 <li><a href="products.html">Cedar Products</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="quote.html">Build a Quote</a></li>
                 <li><a class="button" href="tel:208-435-4802">(208) 435-4802</a></li>
             </ul>
         </nav>
@@ -90,7 +92,7 @@
                 </div>
         </section>
 
-        <section>
+        <!-- <section>
             <div class="woodplank">
                 <img src="img/2x/woodplank.png" width="1000px" height="700px">
             </div>
@@ -100,39 +102,80 @@
                     <p class="small-text">Hand-split Cuts</p>
                     <h3>Cedar Products</h3>
                 </div>
-                <div class="row">
-                    <div class="one-half">
-                        <!-- Slider main container -->
-                        <div class="swiper-container">
-                            <!-- Additional required wrapper -->
-                            <div class="swiper-wrapper">
-                                <!-- Slides -->
-                                <div class="swiper-slide">
+            </div>
+
+            <div class="row">
+                <div class="one-third">
+                    <h4>What we produce</h4>
+                </div>
+                <div class="two-thirds">
+                    <div class="swiper product-swiper">
+                        <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="ccm-card">
+                                <img src="img/picketfence-prod.svg" alt="placeholder" width="371px" height="531px">
+                                <div class="ccm-card-content">
+                                    <img class="center" src="img/picketfence-ccmcard.svg" alt="placeholder" width="60px" height="60px">
                                     <h4>Picket Fencing</h4>
-                                </div>
-                                <div class="swiper-slide">
-                                    <h4>Post & Rails</h4>
-                                </div>
-                                <div class="swiper-slide">
-                                    <h4>Mulch</h4>
-                                </div>
-                                <div class="swiper-slide">
-                                    <h4>Fence Boards</h4>
+                                    <div class="read-more">
+                                        <div class="button">
+                                            <a href="products.html">View product</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- If we need navigation buttons -->
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
                         </div>
+                        <div class="swiper-slide">
+                            <div class="ccm-card">
+                                <img src="img/postnrails-prod.svg" alt="placeholder">
+                                <div class="ccm-card-content">
+                                    <h4>Post & Rails</h4>
+                                    <div class="read-more">
+                                        <div class="button">
+                                            <a href="products.html">View product</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="ccm-card">
+                                <img src="img/mulch-prod.svg" alt="placeholder">
+                                <div class="ccm-card-content">
+                                    <h4>Mulch</h4>
+                                    <div class="read-more">
+                                        <div class="button">
+                                            <a href="products.html">View product</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="ccm-card">
+                                <img src="img/fenceboards-prod.svg" alt="placeholder">
+                                <div class="ccm-card-content">
+                                    <h4>Fence Boards</h4>
+                                    <div class="read-more">
+                                        <div class="button">
+                                            <a href="products.html">View product</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
                     
-                </div>
             </div>
+
             <div class="read-more">
                 <div class="button"><a href="products.html">Read More</a></div>
             </div>
-        </section>
+        </section> -->
 
         <div class="container">
             <div class="section-title tagline">
@@ -143,35 +186,35 @@
                 <ul class="cards">
                     <li class="cards_item">
                         <div class="card">
-                        <div class="card_content">
-                            <img src="img/2x/mail.png" width="80px" height="80px">
-                            <h2 class="card_title">Contact Us</h2>
-                            <p class="card_text top-text">(208) 435-4802</p>
-                            <p class="card_text">jaighdenlondon@gmail.com</p>
-                            <button class="btn card_btn">Get in Touch</button>
-                        </div>
-                        </div>
-                    </li>
-                    <li class="cards_item">
-                        <div class="card">
-                        <div class="card_content">
-                            <img src="img/2x/pinpoint.png" width="80px" height="80px">
-                            <h2 class="card_title">Our Location</h2>
-                            <p class="card_text top-text">721 W Second Street</p>
-                            <p class="card_text">Weippe, ID 83553</p>
-                            <button class="btn card_btn">Get Directions</button>
-                        </div>
+                            <div class="card_content">
+                                <img src="img/2x/mail.png" width="80px" height="80px">
+                                <h2 class="card_title">Contact Us</h2>
+                                <p class="card_text top-text">(208) 435-4802</p>
+                                <p class="card_text">jaighdenlondon@gmail.com</p>
+                                <button class="btn card_btn">Get in Touch</button>
+                            </div>
                         </div>
                     </li>
                     <li class="cards_item">
                         <div class="card">
-                        <div class="card_content">
-                            <img src="img/2x/quote.png" width="80px" height="80px">
-                            <h2 class="card_title">Build a Quote</h2>
-                            <p class="card_text top-text">Want to know more?</p>
-                            <p class="card_text">Click to get a free quote</p>
-                            <button class="btn card_btn">Get a Quote</button>
+                            <div class="card_content">
+                                <img src="img/2x/pinpoint.png" width="80px" height="80px">
+                                <h2 class="card_title">Our Location</h2>
+                                <p class="card_text top-text">721 W Second Street</p>
+                                <p class="card_text">Weippe, ID 83553</p>
+                                <button class="btn card_btn"><a href="https://www.google.com/maps/place/721+W+2nd+St,+Weippe,+ID+83553/@46.3806205,-115.9426815,504m/data=!3m1!1e3!4m5!3m4!1s0x54a07f780afe7ddb:0x952966b117145595!8m2!3d46.3802506!4d-115.9419234">Get Directions</a></button>
+                            </div>
                         </div>
+                    </li>
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_content">
+                                <img src="img/2x/quote.png" width="80px" height="80px">
+                                <h2 class="card_title">Build a Quote</h2>
+                                <p class="card_text top-text">Want to know more?</p>
+                                <p class="card_text">Click to get a free quote</p>
+                                <button class="btn card_btn">Get a Quote</button>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -201,22 +244,45 @@
                 <p class="small-text">20+ Years of Experience</p>
                 <h3>A Look Into Our Story</h3>
             </div>
-            <div class="row">
-                <div class="one-fourth">
-                    <img src="img/Timeline_01.png" alt="spot illustration of baby plant">
+            <div class="home_timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <img src="img/Timeline_01.png" alt="">
+                    </div>
+                    <h4 class="timeline-text">1975</h4>
                 </div>
-                <div class="one-fourth">
-                    <img src="img/Timeline_02.png" alt="spot illustration of plant growing">
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <img src="img/Timeline_02.png" alt="">
+                    </div>
+                    <h4 class="timeline-text">2002</h4>
                 </div>
-                <div class="one-fourth">
-                    <img src="img/Timeline_03.png" alt="spot illustration of a big tree">
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <img src="img/Timeline_03.png" alt="">
+                    </div>
+                    <h4 class="timeline-text">2011</h4>
                 </div>
-                <div class="one-fourth">
-                    <img src="img/Timeline_04.png" alt="spot illustration of a line">
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <img src="img/Timeline_04.png" alt="">
+                    </div>
+                    <h4 class="timeline-text">2017</h4>
                 </div>
-                <div class="one-fourth">
-                    <img src="img/Timeline_05.png" alt="spot illustration of a growing tree">
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <img src="img/Timeline_05.png" alt="">
+                    </div>
+                    <h4 class="timeline-text">2021</h4>
                 </div>
+            </div>
+
+            <div class="read-more">
+                <div class="button"><a href="about.html">Read More</a></div>
             </div>
         </div>
 
@@ -285,9 +351,10 @@
                 </div>
             </div>
         </section>
-
     </main>
 
+    <hr />
+    
     <footer class="site-footer">
         <div class="row">
             <div class="one-third footer-logo">
@@ -296,17 +363,16 @@
                 <a>We set out to make high-quality cedar products at affordable prices that anyone can enjoy, and we have been doing so for over 20 years.</a>
             </div>
             <div class="one-third footer-navigation">
-                <nav class="site-nav one-half">
+                <nav class="site-nav">
                     <ul class="inline-nav">
                         <h5>Company</h5>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="products.html">Cedar Products</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="quote.html">Build a Quote</a></li>
                     </ul>
                 </nav>
-                <nav class="footer-contact one-half">
+                <nav class="footer-contact">
                     <ul class="inline-nav">
                         <h5>Contact Us</h5>
                         <li><a href="tel:208-435-4802">(208) 435-4802</a></li>
@@ -315,14 +381,14 @@
                 </nav>
             </div>
             <div class="newsletter one-third">
-                <div class="container">
                 <div>
                     <h5>Newsletter</h5>
                     <p>Sign up for our latest news, updates, and insights on Cedar Creek Manufacturing!</p>
                 </div>
+                <div>
                     <form>
-                    <input type="email" placeholder="Enter Email...">
-                    <button type="submit" class="button_1">Subscribe</button>
+                        <input type="text" placeholder="Enter Email...">
+                        <button type="submit" class="button_1">Subscribe</button>
                     </form>
                 </div>
             </div>
@@ -335,6 +401,24 @@
         var scroll = new SmoothScroll('a[href*="#"]', {
             speed: 800,
             speedAsDuration: true
+        });
+    </script>
+
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        /* SWIPER */ 
+        const swiper = new Swiper('.swiper.product-swiper', {
+            // Optional parameters
+            slidesPerView: 2.5,
+            spaceBetween: 30,
+            // centeredSlides: true,
+    
+            // Navigation arrows
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
         });
     </script>
 

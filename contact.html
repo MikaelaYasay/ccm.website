@@ -34,22 +34,84 @@
             <ul>
                 <li><a href="products.html">Cedar Products</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="quote.html">Build a Quote</a></li>
+                <li><a class="selected" href="contact.html">Contact</a></li>
                 <li><a class="button" href="tel:208-435-4802">(208) 435-4802</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="site-main">
-        <div class="hero-img">
-            <img src="img/Picket_Hero.jpg" alt="Image of a dog on wood" width="1800px" height="2050px">
-            <h1 class="hide-visually">High-quality, Hand-split cedar products</h1>
+        <div class="hero-bg">
+            <img class="full-screen-width" src="img/2x/westernred_bg.png" alt="">
         </div>
+        <section class="hero animate-on-scroll">
+            <div class="container">
+                <h1>Contact</h1>
+                <p>What can we help you with?</p>
+            </div>
+        </section>
 
-        
+        <div class="container">
+            <div class="section-title tagline">
+                <p class="small-text">How can we help?</p>
+                <h3>Let's Get in Touch!</h3>
+            </div>
 
+            <div class="row">
+                <div class="one-whole">
+                    <div class="centered-align">
+                        <div class="cont-section">
+                            <div class="cont-information">
+                                <div class="contact-content">
+                                    <h4><span class="dark-color">Contact Info</span></h4>
+                                    <h6><span class="color-yellow">Phone:</span> (208) 435-4802</h6>
+                                    <h6><span class="color-yellow">Email:</span><a class="email-contact" href="mailto:jaighdenlondon@gmail.com">jaighdenlondon@gmail.com</a></h6>
+                    
+                    
+                                    <div class="contact-spacing">
+                                        <h4><span class="dark-color">Address</span></h4>
+                                        <h6><span class="color-yellow">721 W Second Street</span></h6>
+                                        <h6><span class="color-yellow">Weippe, ID 83553</span></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="one-whole">
+                    <div class="form"></div>
+                        <form action="/action_page.php">
+                        <label for="fname">Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="General Olive Otis Howard">
+                    
+                        <label for="lname">Email</label>
+                        <input type="text" id="lname" name="lastname" placeholder="lovehandsplitwood@cedar.com">
+
+                        <label for="lname">Phone Number</label>
+                        <input type="text" id="lname" name="lastname" placeholder="(858) 651-5050">
+                    
+                        <label for="service">Services</label>
+                        <select id="service" name="country">
+                            <option value="products">(Select Option)</option>
+                            <option value="products">Build a Quote</option>
+                            <option value="products">Custom Cuts</option>
+                            <option value="products">Fencing Products</option>
+                            <option value="products">General Concern</option>
+                        </select>
+                    
+                        <label for="subject">Message</label>
+                        <textarea id="subject" name="subject" placeholder="Is it possible to get an order of..." style="height:100px"></textarea>
+                    
+                        <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+
+    <hr />
 
     <footer class="site-footer">
         <div class="row">
@@ -59,17 +121,16 @@
                 <a>We set out to make high-quality cedar products at affordable prices that anyone can enjoy, and we have been doing so for over 20 years.</a>
             </div>
             <div class="one-third footer-navigation">
-                <nav class="site-nav one-half">
+                <nav class="site-nav">
                     <ul class="inline-nav">
                         <h5>Company</h5>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="products.html">Cedar Products</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="quote.html">Build a Quote</a></li>
                     </ul>
                 </nav>
-                <nav class="footer-contact one-half">
+                <nav class="footer-contact">
                     <ul class="inline-nav">
                         <h5>Contact Us</h5>
                         <li><a href="tel:208-435-4802">(208) 435-4802</a></li>
@@ -78,14 +139,14 @@
                 </nav>
             </div>
             <div class="newsletter one-third">
-                <div class="container">
                 <div>
                     <h5>Newsletter</h5>
                     <p>Sign up for our latest news, updates, and insights on Cedar Creek Manufacturing!</p>
                 </div>
+                <div>
                     <form>
-                    <input type="email" placeholder="Enter Email...">
-                    <button type="submit" class="button_1">Subscribe</button>
+                        <input type="text" placeholder="Enter Email...">
+                        <button type="submit" class="button_1">Subscribe</button>
                     </form>
                 </div>
             </div>

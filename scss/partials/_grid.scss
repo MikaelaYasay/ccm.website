@@ -1,5 +1,5 @@
 /* SEMANTIC GRID */ 
-$gridgap: 4%;
+$gridgap: 2%;
 
 .row {
     display: flex;
@@ -25,7 +25,7 @@ $gridgap: 4%;
         }
 
         .one-whole {width: 100% - $gridgap;}
-        .one-half {width: 48% - $gridgap;}
+        .one-half {width: 50% - $gridgap;}
         .one-third {width: 33.3333% - $gridgap;}
         .two-thirds {width: 66.6666% - $gridgap;}
         .one-fourth {width: 25% - $gridgap;}
