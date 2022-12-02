@@ -741,6 +741,17 @@ body {
   background-color: #743B1B;
 }
 
+/* BODY IMAGE FOR ABOUT US */
+.wood-bg {
+  background-image: url("/img/wood-bg.svg");
+  background-size: cover;
+}
+
+.cedar-log-bg {
+  background-image: url("/img/cedar-log-bg.svg");
+  background-size: cover;
+}
+
 /* COLOR YELLOW TAGS */
 .color-yellow {
   color: #C1A676;
@@ -1114,6 +1125,19 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+/* ABOUT PAGE */
+.root-image {
+  background-image: url("/img/roots-bg-left.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.root-image-right {
+  background-image: url("/img/roots-bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* SITE-HEADER SITE-NAV */
