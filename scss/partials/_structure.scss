@@ -116,8 +116,8 @@ body {
 section {
     padding: 4em 0;
     min-height: 100vh;
-    display: grid;
-    align-items: center;
+    // display: grid;
+    // align-items: center;
 }
 
 /* HERO SECTION */
@@ -310,6 +310,76 @@ section {
     font-family: $font-family-serif;
     font-weight: 400;
     }
+}
+
+/* MEET THE TEAM */ 
+.team-cont {
+    display: flex;
+}
+
+.scott-card {
+    display: flex;
+    justify-content: center;
+}
+
+.leanne-card {
+    display: flex;
+    justify-content: center;
+}
+
+.picket-card {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.team-title {
+    color: #743B1B;
+}
+
+.team-subtitle {
+    color: $color-yellow;
+}
+  
+.header img {
+    max-width: 340px;
+    margin: 0;
+    padding: 1em;
+    border-top-right-radius: 2%;
+    border-top-left-radius: 2%;
+}
+  
+.team-card {
+    margin: 2em;
+    max-width: 340px;
+    box-shadow: 3px 3px 25px 0px rgba(46,61,73,0.5);
+    opacity: .8;
+    transition: all .3s ease-in-out;
+    background-color: #EBEBEB;
+}
+
+.team-card:hover {
+    cursor: pointer;
+    opacity: 1;
+    box-shadow: 1px 1px 25px 0px rgba(46,61,73,0.4);
+}
+  
+.descr {
+    margin-top: 0;
+    padding: 1em;
+    color: #2e3d49;
+}
+  
+.descr p {
+    font-size: .75em;
+    margin-top: 5.5em;
+    padding-bottom: 1em;
 }
 
 /* CONTACTS PAGE */ 

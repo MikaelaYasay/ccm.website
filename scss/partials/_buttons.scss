@@ -15,6 +15,22 @@
         
     }
 }
+.button2 {
+    display: inline-block;
+    background-color: #C1A676;
+    color: #743B1B;
+    text-decoration: none;
+    padding: 1em;
+    border-radius: 5px;
+    margin-top: 1em;
+
+    &:hover {
+        color: #fff;
+        background-color: #C1A676;
+        box-shadow: 0 4px 8px 0 rgb(37, 37, 37);
+        
+    }
+}
 
 /* NEWSLETTER */
 .newsletter {
