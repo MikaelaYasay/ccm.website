@@ -99,7 +99,9 @@ img {
 }
 
 .cards {
+    margin: 0;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     list-style: none;
     margin-bottom: 10em;
@@ -113,19 +115,8 @@ img {
     padding: 0;
 }
 
-.cards_item {
-    max-width: 600px;
-    display: flex;
-    justify-content: center;
-    padding: 1em;
-
-    a {
-        text-decoration: none;
-     }
-}
-
 .card {
-    width: 300px;
+    width: 275px;
     height: 400px;
     background-color: #EBEBEB;
     border-radius: 0.25rem;
@@ -162,9 +153,18 @@ img {
 }
 
 .cards_item {
-    max-width: 700px;
-    height: 300px;
+    width: 275px;
+    height: 400px;
     padding: .2em;
+    margin: .9em;
+}
+
+.info_cards {
+    display: inline-block;
+    justify-content: center;
+    .cards {
+        margin: 1em;
+    }
 }
 
 /* PROFILES */ 

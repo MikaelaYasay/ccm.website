@@ -151,6 +151,36 @@ section {
     text-align: center;
 }
 
+.CCM-aboutcontent {
+    margin: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: #914E26;
+    box-shadow: 10px 8px $color-dark;
+}
+
+.CCM-contactcontent {
+    width: 400px;
+    height: 300px;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: #914E26;
+    box-shadow: 10px 8px $color-dark;
+    z-index: -999;
+}
+
+
+.CCM-productcontent {
+    width: 300px;
+    height: 150px;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: #914E26;
+    box-shadow: 10px 8px $color-dark;
+    z-index: -999;
+}
+
 /* OUR MISSION */ 
 .container { 
     .tagline {
@@ -236,10 +266,6 @@ section {
 /* PRODUCTS EMAIL */ 
 .email-link {
     color: $color-yellow;
-}
-
-.product-desc {
-    max-width: 1000px;
 }
 
 /* HOME TIMELINE */ 

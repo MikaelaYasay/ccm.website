@@ -32,40 +32,53 @@ hr {
   border: 1px solid $color-yellow;
 }
 
+.vl {
+  border-left: 2px solid $color-yellow;
+  height: 5em;
+}
+
+.centered-line {
+  display: flex;
+  justify-content: center;
+}
+
+
 /* CONTACT FORM */ 
 input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
   
-  input[type=submit] {
-      display: grid;
-      justify-content: center;
-      align-items: center;
-    background-color: $color-yellow;
-    color: $color-red;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: $color-yellow;  
-    box-shadow: 0 4px 8px 0 rgb(37, 37, 37);
-  }
-  
-  .container {
-    border-radius: 5px;
-    background-color: transparent;
-    padding: 20px;
-  }
+input[type=submit] {
+  margin: 0;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-yellow;
+  color: $color-red;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: $color-yellow;  
+  box-shadow: 0 4px 8px 0 rgb(37, 37, 37);
+}
+
+.container {
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 20px;
+}
 
 /* SWIPER */
 .swiper-slide {
@@ -96,141 +109,132 @@ input[type=text], select, textarea {
 
 
 /* TIMELINE */ 
-.text{
-  display: inline-flex;
-  font-size: 1em;  
+.time-title {
+  color: #2D1A10;
 }
-
-.time{
-  display: inline-flex;
-}
-
-.time__month{
-  margin-left: var(--timelineMounthMarginLeft, .25em);
-}
-
-.time{
-  padding: var(--timePadding, .25rem 1.25rem .25rem);
-  background-color: var(--timeBackgroundColor, #EBEBEB);
-
-  font-size: var(--timeFontSize, .75rem);
-  font-weight: var(--timeFontWeight, 700);
-  text-transform: var(--timeTextTransform, uppercase);
-  color: var(--timeColor, currentColor);
-}
-
-.card{
-  padding: 2em 1.5em 1.25em;
-}
-
-.card__content{
-  margin-top: var(--cardContentMarginTop, 1em);
-}
-
-.card__title{
-  --rTitleMarginTop: var(--cardTitleMarginTop, 1rem);
-  font-size: var(--cardTitleFontSize, 1.25rem);
-}
-
-/*=====CORE STYLES=====*/
-
-.timeline{
-  display: var(--timelineDisplay, grid);
-  grid-row-gap: var(--timelineGroupsGap, 2rem);
-}
-
-/*1. If timeline__year isn't displaed the gap between it and timeline__cards isn't displayed too*/
-
-.timeline__year{
-  margin-bottom: 1.25rem; /* 1 */
-}
-
-.timeline__cards{
-  display: grid;
-  grid-row-gap: 1.5em;
-}
-
-
-/*=====SKIN=====*/
-
-.timeline{
-  --uiTimelineMainColor: var(--timelineMainColor, #222);
-
-  border-left: var(--timelineLineWidth, 3px) solid var(--timelineLineBackgroundColor, var(--uiTimelineMainColor));
-  padding-top: 1rem;
-  padding-bottom: 2.5rem;
-}
-
-.timeline__year{
-  --timePadding: var(--timelineYearPadding, .5rem 1.5rem);
-  --timeColor: var(--uiTimelineSecondaryColor);
-  --timeBackgroundColor: var(--uiTimelineMainColor);
-  --timeFontWeight: var(--timelineYearFontWeight, 400);
-}
-
-.timeline__card{
+/* The actual timeline (the vertical ruler) */
+.timeline {
   position: relative;
-  margin-left: 1em;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/*1. Stoping cut box shadow*/
-
-.timeline__cards{
-  overflow: hidden;
-  padding-top: .25rem; /* 1 */
-  padding-bottom: 3em; /* 1 */
-}
-
-.timeline__card::before{
-  content: "";
-  width: 100%;
-  height: var(--timelineCardLineWidth, 2px);
-  background-color: var(--timelineCardLineBackgroundColor, var(--uiTimelineMainColor));
-
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
   position: absolute;
-  top: var(--timelineCardLineTop, 1rem);
-  left: -50%;
-  z-index: -1;
+  width: 6px;
+  background-color: $color-yellow;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
 }
 
-/*=====SETTINGS=====*/
-/**/
-.timeline{
-  --timelineMainColor: #C1A676;
+/* Container around content */
+.content-container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
 }
 
-/*=====DEMO=====*/
-.timeline__year {
-  font-family: $font-family-serif;
+/* The circles on the timeline */
+.content-container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #743B1B;
+  border: 4px solid $color-yellow;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
 }
 
-.color-yellow2 {
-  color: $color-yellow2;
-  margin-right: .5em;
+/* Place the container to the left */
+.left {
+  left: 0;
 }
 
-.timeline p,
-.time__month {
-  font-family: $font-family-sans;
-  color: #222;
-
-  background-color: #EBEBEB;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
+/* Place the container to the right */
+.right {
+  left: 50%;
 }
 
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  line-height: 1.5;
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid transparent;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
 }
 
-p:last-child {
-  margin-bottom: 0;
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
 }
 
-.page {
-  display: flex;
-  justify-content: center;
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
 }
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  border: 1px solid #EBEBEB;
+  border-color: #EBEBEB;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+/* HOME */ 
