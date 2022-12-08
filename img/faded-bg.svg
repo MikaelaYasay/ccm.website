@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 600">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="1.19" y1="2001.69" x2="1.19" y2="2001" gradientTransform="translate(-1467.13 1451341.73) scale(1762.13 -725.01)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#965027"/>
+      <stop offset=".15" stop-color="#914d25"/>
+      <stop offset="1" stop-color="#743b1b"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_790" data-name="Path 790" class="cls-1" d="M44.74,107.25c85.36-11.31,142.13,13.85,215.67,15.31,34.34,.68,147.79,16.07,196.66,12.82,48.86-3.25,181.2-15.65,222.93-17.72,2-.1,166.3-5.36,169.36-5.55,192.74-11.75,289.64-1.6,339.92,41.93,63.55,55.02,97.8,164.42,59.73,220.95-8.86,13.15-20.36,21.57-30,27,.67,68,1.33,136,2,204-407.26-2.68-814.52-5.37-1221.78-8.05C-2.86,437.63-4.93,277.32-7,117c11.74-2.88,29.67-6.82,51.74-9.75Z"/>
+</svg>

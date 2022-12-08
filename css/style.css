@@ -104,6 +104,16 @@ hr {
   left: -9999px;
 }
 
+/* CENTER ITEMS */
+.centered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 /* CARDS */
 .card-width .row {
   margin: 0;
@@ -926,14 +936,32 @@ section {
 }
 
 .CCM-productcontent {
-  width: 300px;
-  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 550px;
+  height: 300px;
   padding: 1em;
+  margin: 1.5em;
   border-radius: 1em;
   background-color: #914E26;
   -webkit-box-shadow: 10px 8px #2D1A10;
           box-shadow: 10px 8px #2D1A10;
   z-index: -999;
+}
+.CCM-productcontent .product-desc {
+  display: -ms-grid;
+  display: grid;
+  padding: 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.CCM-productcontent .product-desc p {
+  font-size: 1.2em;
 }
 
 /* OUR MISSION */
@@ -1010,98 +1038,6 @@ section {
 /* PRODUCTS EMAIL */
 .email-link {
   color: #C1A676;
-}
-
-/* HOME TIMELINE */
-.home_timeline {
-  margin-bottom: 1em;
-  padding-left: 50px;
-  padding-right: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.home_timeline::before {
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: calc(100vw + 200px);
-  top: calc(50% + 50px);
-  left: -50px;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-}
-
-.timeline-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  height: 190px;
-}
-.timeline-item::before {
-  content: "";
-  width: 1px;
-  background-color: #C1A676;
-  position: absolute;
-  height: 50px;
-  bottom: 50px;
-  z-index: -1;
-}
-
-.timeline-icon {
-  border-radius: 3em;
-  padding: 0;
-  font-size: 50px;
-  width: 100px;
-  height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
-  -webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
-  transition: -webkit-box-shadow 0.2s ease-in-out;
-  transition: box-shadow 0.2s ease-in-out;
-  transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
-}
-.timeline-icon:hover {
-  -webkit-box-shadow: 1px 1px rgba(255, 0, 0, 0.5019607843);
-          box-shadow: 1px 1px rgba(255, 0, 0, 0.5019607843);
-}
-
-.timeline-title {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-}
-
-.timeline-text h4 {
-  color: white;
-  padding: 5px;
-  padding-top: 1em;
-  font-family: "Arvo", Georgia, "Times New Roman", Times, serif;
-  font-weight: 400;
 }
 
 /* MEET THE TEAM */
@@ -1267,6 +1203,18 @@ section {
   background-repeat: no-repeat;
 }
 
+.root-img {
+  background-image: url("/img/roots-bg.svg");
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+.faded-bg {
+  background-image: url("/img/faded-bg.svg");
+  background-size: cover;
+  background-repeat: repeat;
+}
+
 /* SITE-HEADER SITE-NAV */
 .site-header .site-nav {
   /* BIG SCREENS */
@@ -1395,7 +1343,8 @@ section {
 
 /* FOOTER SITE-NAV */
 .site-footer {
-  padding: 0 2em;
+  padding: 3em 2em 0 2em;
+  background-color: #914E26;
 }
 
 .site-footer .site-nav h5,
