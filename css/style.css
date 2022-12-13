@@ -104,6 +104,10 @@ hr {
   left: -9999px;
 }
 
+.benefit_desc {
+  color: #EBEBEB;
+}
+
 /* CENTER ITEMS */
 .centered {
   display: -webkit-box;
@@ -388,6 +392,10 @@ input[type=submit]:hover {
           justify-content: center;
 }
 
+.direction_btn a {
+  text-decoration: none;
+}
+
 /* NEWSLETTER */
 .newsletter {
   padding: 0;
@@ -529,9 +537,6 @@ img {
   border: 1px solid #C1A676;
   background: #C1A676;
   margin-top: 3em;
-}
-.btn a {
-  text-decoration: none;
 }
 
 .btn:hover {
@@ -1197,28 +1202,28 @@ section {
 /* ABOUT PAGE */
 .root-image {
   background-image: url("/img/roots-bg-left.svg");
-  z-index: 2;
+  z-index: -1;
   background-repeat: no-repeat;
   background-size: auto;
 }
 
 .root-image-right {
   background-image: url("/img/roots-bg.svg");
-  z-index: 2;
+  z-index: -1;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .root-img {
   background-image: url("/img/roots-bg.svg");
-  z-index: 2;
+  z-index: -1;
   background-size: cover;
   background-repeat: repeat;
 }
 
 .faded-bg {
   background-image: url("/img/faded-bg.svg");
-  z-index: 2;
+  z-index: -1;
   background-size: cover;
   background-repeat: repeat;
 }
